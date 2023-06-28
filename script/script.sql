@@ -1,6 +1,6 @@
--- drop database fashionstore;
-create database fashionstore;
-use fashionstore;
+-- drop database dvdstore;
+create database dvdstore;
+use dvdstore;
 -- Tạo bảng
 create table cart (id integer not null auto_increment, count integer not null, product_id integer, user_id varchar(255), primary key (id)) engine=InnoDB;
 create table category (id integer not null auto_increment, category_name nvarchar(1111), primary key (id)) engine=InnoDB;
@@ -18,16 +18,16 @@ alter table product add constraint FK1mtsbur82frn64de7balymq9s foreign key (cate
 alter table product_image add constraint FK6oo0cvcdtb6qmwsga468uuukk foreign key (product_id) references product (id);
 
 -- Insert dữ liệu
-INSERT INTO `fashionstore`.`user` (`id`, `login_Type`, `role`, `password`, `user_Name`, `avatar`, `email`, `phone_Number`) VALUES ('duy', 'default', 'user', 'MQ==', 'QuocDuy', 'https://haycafe.vn/wp-content/uploads/2022/02/Avatar-trang-den.png', 'duyquocdo19@gmail.com', '0978131575');
-INSERT INTO `fashionstore`.`user` (`id`, `login_Type`, `role`, `password`, `user_Name`, `avatar`, `email`, `phone_Number`) VALUES ('hoanhao1512', 'default', 'user', 'MQ==', 'QuocDuy', 'https://haycafe.vn/wp-content/uploads/2022/02/Avatar-trang-den.png', 'duyquocdo19@gmail.com', '0978131575');
-INSERT INTO `fashionstore`.`user` (`id`, `login_Type`, `role`, `password`, `user_Name`, `avatar`, `email`, `phone_Number`) VALUES ('admin', 'default', 'admin', 'MQ==', 'QuocDuy', 'https://haycafe.vn/wp-content/uploads/2022/02/Avatar-trang-den.png', 'duyquocdo19@gmail.com', '0978131575');
+INSERT INTO `dvdstore`.`user` (`id`, `login_Type`, `role`, `password`, `user_Name`, `avatar`, `email`, `phone_Number`) VALUES ('duy', 'default', 'user', 'MQ==', 'QuocDuy', 'https://haycafe.vn/wp-content/uploads/2022/02/Avatar-trang-den.png', 'duyquocdo19@gmail.com', '0978131575');
+INSERT INTO `dvdstore`.`user` (`id`, `login_Type`, `role`, `password`, `user_Name`, `avatar`, `email`, `phone_Number`) VALUES ('hoanhao1512', 'default', 'user', 'MQ==', 'QuocDuy', 'https://haycafe.vn/wp-content/uploads/2022/02/Avatar-trang-den.png', 'duyquocdo19@gmail.com', '0978131575');
+INSERT INTO `dvdstore`.`user` (`id`, `login_Type`, `role`, `password`, `user_Name`, `avatar`, `email`, `phone_Number`) VALUES ('admin', 'default', 'admin', 'MQ==', 'QuocDuy', 'https://haycafe.vn/wp-content/uploads/2022/02/Avatar-trang-den.png', 'duyquocdo19@gmail.com', '0978131575');
 -- user name = duy pass=1
 -- admin name = admin pass=1
 
-INSERT INTO `fashionstore`.`category` (`category_Name`) VALUES ('Kinh dị');
-INSERT INTO `fashionstore`.`category` (`category_Name`) VALUES ('Hành Động');
-INSERT INTO `fashionstore`.`category` (`category_Name`) VALUES ('Phiêu lưu');
-INSERT INTO `fashionstore`.`category` (`category_Name`) VALUES ('Gia đình');
-INSERT INTO `fashionstore`.`category` (`category_Name`) VALUES ('Trinh thám');
+INSERT INTO `dvdstore`.`category` (`category_Name`) VALUES ('Kinh dị');
+INSERT INTO `dvdstore`.`category` (`category_Name`) VALUES ('Hành Động');
+INSERT INTO `dvdstore`.`category` (`category_Name`) VALUES ('Phiêu lưu');
+INSERT INTO `dvdstore`.`category` (`category_Name`) VALUES ('Gia đình');
+INSERT INTO `dvdstore`.`category` (`category_Name`) VALUES ('Trinh thám');
 
 
