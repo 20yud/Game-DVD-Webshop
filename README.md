@@ -36,6 +36,10 @@ Chọn Help-> Eclipse Marketplace-> Search "Spring tool 4"-> Install
 ```
 
 ```sh
+Cài đặt Lombok->Chọn đường dẫn->Ok
+```
+
+```sh
 Chọn File->Open Projects From File System-> Directory->Chọn Folder WebProject tại C:\Users\{ten}\eclipse-workspace
 Đợi load đầy đủ Plugin
 ```
