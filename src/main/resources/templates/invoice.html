@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>Male-Fashion</title>
+<title>DvD-Workshop</title>
 <link rel="icon" href="/img/logo-3.png">
 <link rel="stylesheet" href="css/invoice.css">
 </head>
@@ -34,7 +34,7 @@
 				<p id="details">
 					<strong>Order: </strong><i th:text="'#' + ${order.id}"></i><br>
 					<strong>Issued: </strong><i  th:text="${#dates.format(order.booking_Date, 'dd-MM-yyyy')}"></i><br>
-					Due 7 days from date of issue
+			
 				</p>
 			</div>
 		</div>
@@ -47,7 +47,7 @@
 			<div class="col-md-6">
 				<strong class="margin-bottom-5">Supplier</strong>
 				<p>
-					Male-Fashion <br> 498 Lê Văn Việt - Tăng Nhơn Phú A<br>TP.
+					DvD-Workshop <br> Đường Hàn Thuyên, khu phố 6<br>TP.
 					Thủ Đức - TP. Hồ Chí Minh <br>
 				</p>
 			</div>
@@ -83,9 +83,10 @@
 				<p>
 					<strong class="margin-bottom-5">Address: </strong>
 					<i th:text="${order.address}"></i><br>
-					<strong class="margin-bottom-5">Payment method: </strong>
-					<i th:text="${order.payment_Method}"></i>
+					
+					<i >Please go to the store to receive your dvd game.</i>
 				</p>
+				
 				
 				
 			</div>
@@ -108,8 +109,8 @@
 			<div class="col-md-12">
 				<ul id="footer">
 					<li><span>www.example.com</span></li>
-					<li>haovo1512@gmail.com</li>
-					<li>0799 197 703</li>
+					<li>duyquocdo19@gmail.com</li>
+					<li>0978 131 575</li>
 				</ul>
 			</div>
 		</div>

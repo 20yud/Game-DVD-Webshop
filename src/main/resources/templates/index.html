@@ -26,6 +26,12 @@
 </head>
 
 <body>
+	<script th:if="${session.AddToCartErr != null}">
+		swal("Lỗi", "Vui lòng đăng nhập trước khi thực hiện thao tác!", "error");
+	</script>
+	<p th:if="${session.AddToCartErr != null}"
+		th:text="${#session.setAttribute('AddToCartErr', null)}"
+		style="display: none;"></p>
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
